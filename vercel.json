@@ -1,9 +1,4 @@
 {
-  "version": 2,
-  "public": true,
-  "github": {
-    "silent": true
-  },
   "cleanUrls": true,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
@@ -11,15 +6,6 @@
   "headers": [
     {
       "source": "/(.*).png",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
-    },
-    {
-      "source": "/(.*).jpg",
       "headers": [
         {
           "key": "Cache-Control",
